@@ -30,4 +30,8 @@ public class MesaProfesor
     public void setColor(String nuevoColor){
         color = nuevoColor;
     }
+    
+    public void imprimirDetalles(){
+        System.out.println("Altura: " + altura + "Color: " + color);
+    }
 }
