@@ -10,10 +10,24 @@ public class MesaProfesor
     private int altura;
     private String color;
 
-        public MesaProfesor(int alturaMesa, String colorMesa)
-    {
+    public MesaProfesor(int alturaMesa, String colorMesa){
         altura = alturaMesa;
         color = colorMesa;
     }
-
+    
+    public int getAltura(){
+        return altura;
+    }
+    
+    public String getColor(){
+        return color;
+    }
+    
+    public void setAltura(int nuevaAltura){
+        altura = nuevaAltura;
+    }
+    
+    public void setColor(String nuevoColor){
+        color = nuevoColor;
+    }
 }
