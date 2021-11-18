@@ -26,7 +26,7 @@ public class Clase
     }
     
     public String getDetallesMesaProfesor(){
-        return "Altura: " + mesaProfesor.getAltura() + ", " + "Color: " + mesaProfesor.getColor();
+        return "Altura: " + mesaProfesor.getAltura() + "| Color: " + mesaProfesor.getColor();
     }
     
     public void setNumeroAlumnos(int nuevoNumeroAlumnos){
@@ -40,5 +40,9 @@ public class Clase
     public void setDetallesMesaProfesor(int nuevaAltura, String nuevoColor){
         mesaProfesor.setAltura(nuevaAltura);
         mesaProfesor.setColor(nuevoColor);
+    }
+    
+    public void imprimirDetalles(){
+        System.out.println("Numero de alumnos: "+numeroAlumnos+"| Puerta abierta: "+abierta+ "| Altura: " + mesaProfesor.getAltura()+ "| Color: " + mesaProfesor.getColor());
     }
 }
