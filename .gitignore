@@ -1,2 +1,4 @@
 README.TXT
 *.bluej
+*.ctxt
+*.class

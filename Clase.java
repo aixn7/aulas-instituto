@@ -11,10 +11,10 @@ public class Clase
     private boolean abierta;
     private MesaProfesor mesaProfesor;
     
-    public Clase(int numeroDeAlumnos, boolean estaAbierta){
+    public Clase(int numeroDeAlumnos, boolean estaAbierta, MesaProfesor mesaDelProfesor){
         numeroAlumnos = numeroDeAlumnos;
         abierta = estaAbierta;
-        mesaProfesor = new MesaProfesor (50,"verde");
+        mesaProfesor = mesaDelProfesor;
     }
     
     public int getNumeroAlumnos(){
