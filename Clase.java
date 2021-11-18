@@ -16,4 +16,29 @@ public class Clase
         abierta = estaAbierta;
         mesaProfesor = new MesaProfesor (50,"verde");
     }
+    
+    public int getNumeroAlumnos(){
+        return numeroAlumnos;
+    }
+    
+    public boolean getAbierta(){
+        return abierta;
+    }
+    
+    public String getDetallesMesaProfesor(){
+        return "Altura: " + mesaProfesor.getAltura() + ", " + "Color: " + mesaProfesor.getColor();
+    }
+    
+    public void setNumeroAlumnos(int nuevoNumeroAlumnos){
+        numeroAlumnos = nuevoNumeroAlumnos;
+    }
+    
+    public void setAbierta(boolean nuevoEstado){
+        abierta = nuevoEstado;
+    }
+    
+    public void setDetallesMesaProfesor(int nuevaAltura, String nuevoColor){
+        mesaProfesor.setAltura(nuevaAltura);
+        mesaProfesor.setColor(nuevoColor);
+    }
 }
